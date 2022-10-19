@@ -64,13 +64,17 @@ for x in range(100):
     #print(lineCustomers[x].customer_name, lineCustomers[x].order.burger_count)
     infoCustomers[lineCustomers[x].customer_name] += (lineCustomers[x].order.burger_count)
 
-for x in infoCustomers:
-  print(x, infoCustomers[x])
+#compiling the list in numerical order  
+listSortedCustomers = sorted(infoCustomers.items(),key=lambda x: x[1], reverse=True)
+
+#print customer data
+for x in range(0,9) :
+  print(listSortedCustomers[x][0].ljust(19), listSortedCustomers[x][1])
 
 
 
-
-
+#for x in infoCustomers:
+#  print(x, infoCustomers[x])
 
 # v
 # #print(infoCustomers[x])
