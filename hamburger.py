@@ -71,30 +71,14 @@ listSortedCustomers = sorted(infoCustomers.items(),key=lambda x: x[1], reverse=T
 for x in range(0,9) :
   print(listSortedCustomers[x][0].ljust(19), listSortedCustomers[x][1])
 
-
-
 #for x in infoCustomers:
 #  print(x, infoCustomers[x])
 
 # v
 # #print(infoCustomers[x])
 
-
-
-
-
-
-
-
-
 #lineCustomers = [0] * 100
 
 #for i in range(0, len(lineCustomers)):
 #     lineCustomers[i] = Customer()
 #      print (lineCustomers[i])
-
-
-
-
-
-
