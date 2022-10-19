@@ -42,8 +42,11 @@ class Customer(Person):
     super().__init__()
     self.order = Order()
 
+#Create a variable for a Queue that will be assigned items of type Customer
 lineCustomers = []
 
+
+#Create a variable for a Dictionary with keys of type string and values of type int.
 infoCustomers = {}
 infoCustomers ["Jefe"] = 0
 infoCustomers ["El Guapo"] = 0
@@ -55,6 +58,7 @@ infoCustomers ["Carmen"] = 0
 infoCustomers ["Invisible Swordsman"] = 0
 infoCustomers ["Singing Bush"] = 0
 
+#Put 100 customers into the queue.
 for x in range(100):
     lineCustomers.append(Customer())
     #print(lineCustomers[x].customer_name, lineCustomers[x].order.burger_count)
