@@ -1,6 +1,6 @@
 #Description:
 #Authors:
-#   Christian Breshears, Jeremy Abbott , Andres F. Nino
+#  Christian Breshears, Jeremy Abbott , Andres F. Nino
 
 from random import randrange
 
