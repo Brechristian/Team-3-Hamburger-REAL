@@ -1,6 +1,6 @@
 #Description:
 #Authors:
-#  Christian Breshears, Jeremy Abbott , Andres F. Nino, Sawyer Evans
+#  Christian Breshears, Jeremy Abbott , Andres F. Nino, Sawyer Evans, Coleman Shuldberg
 
 from random import randrange
 
@@ -65,7 +65,7 @@ for x in range(100):
     infoCustomers[lineCustomers[x].customer_name] += (lineCustomers[x].order.burger_count)
 
 #compiling the list in numerical order  
-listSortedCustomers = sorted(infoCustomers.items(),key=lambda x: x[1], reverse=True)
+listSortedCustomers = sorted(infoCustomers.items(), key=lambda x: x[1], reverse=True)
 
 #print customer data
 for x in range(0,9) :
