@@ -1,6 +1,6 @@
 #Description:
 #Authors:
-#  Christian Breshears, Jeremy Abbott , Andres F. Nino, Sawyer Evans
+#  Christian Breshears, Jeremy Abbott , Andres F. Nino, Sawyer Evans, Coleman Shuldberg
 
 from random import randrange
 
