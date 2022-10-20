@@ -1,6 +1,6 @@
 #Description:
 #Authors:
-#  Christian Breshears, Jeremy Abbott , Andres F. Nino, Mckay Memmott
+#  Christian Breshears, Jeremy Abbott , Andres F. Nino, Sawyer Evans, Coleman Shuldberg, Mckay Memmott
 
 from random import randrange
 
@@ -64,33 +64,21 @@ for x in range(100):
     #print(lineCustomers[x].customer_name, lineCustomers[x].order.burger_count)
     infoCustomers[lineCustomers[x].customer_name] += (lineCustomers[x].order.burger_count)
 
-for x in infoCustomers:
-  print(x, infoCustomers[x])
+#compiling the list in numerical order  
+listSortedCustomers = sorted(infoCustomers.items(), key=lambda x: x[1], reverse=True)
 
+#print customer data
+for x in range(0,9) :
+  print(listSortedCustomers[x][0].ljust(19), listSortedCustomers[x][1])
 
-
-
-
+#for x in infoCustomers:
+#  print(x, infoCustomers[x])
 
 # v
 # #print(infoCustomers[x])
-
-
-
-
-
-
-
-
 
 #lineCustomers = [0] * 100
 
 #for i in range(0, len(lineCustomers)):
 #     lineCustomers[i] = Customer()
 #      print (lineCustomers[i])
-
-
-
-
-
-
