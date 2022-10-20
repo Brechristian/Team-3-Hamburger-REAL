@@ -1,4 +1,5 @@
-#Description:
+#Description: This program puts 100 customers into an online queue that will tally up the total 
+#             burgers each customer orders along with organzing it in a list from most to least burgers ordered.
 #Authors:
 #  Christian Breshears, Jeremy Abbott , Andres F. Nino, Sawyer Evans, Coleman Shuldberg, Mckay Memmott
 
@@ -64,21 +65,14 @@ for x in range(100):
     #print(lineCustomers[x].customer_name, lineCustomers[x].order.burger_count)
     infoCustomers[lineCustomers[x].customer_name] += (lineCustomers[x].order.burger_count)
 
+#Pop people out of the queue after they're finished. Doesn't look like it's required, but Prof. Anderson said do it.
+while len(lineCustomers) > 0:
+    lineCustomers.pop(0)
+
 #compiling the list in numerical order  
 listSortedCustomers = sorted(infoCustomers.items(), key=lambda x: x[1], reverse=True)
 
 #print customer data
+#Print out each customer and their total burgers ordered sorted by the most number of burgers ordered
 for x in range(0,9) :
   print(listSortedCustomers[x][0].ljust(19), listSortedCustomers[x][1])
-
-#for x in infoCustomers:
-#  print(x, infoCustomers[x])
-
-# v
-# #print(infoCustomers[x])
-
-#lineCustomers = [0] * 100
-
-#for i in range(0, len(lineCustomers)):
-#     lineCustomers[i] = Customer()
-#      print (lineCustomers[i])
